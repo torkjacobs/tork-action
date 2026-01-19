@@ -1,6 +1,7 @@
 # Tork AI Governance Action
 
-[![GitHub Marketplace](https://img.shields.io/badge/Marketplace-Tork%20AI%20Governance-blue?logo=github)](https://github.com/marketplace/actions/tork-ai-governance)
+[![GitHub Action](https://img.shields.io/badge/GitHub-Action-blue?logo=github)](https://github.com/torkjacobs/tork-action)
+[![Release](https://img.shields.io/github/v/release/torkjacobs/tork-action)](https://github.com/torkjacobs/tork-action/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Add AI governance checks to your CI/CD pipeline. Scan for PII, validate policies, and enforce compliance automatically.
