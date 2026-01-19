@@ -26,7 +26,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Tork Governance Scan
-        uses: torknetwork/tork-action@v1
+        uses: torkjacobs/tork-action@v1
         with:
           api-key: ${{ secrets.TORK_API_KEY }}
 ```
@@ -57,7 +57,7 @@ jobs:
 
 ```yaml
 - name: Tork Scan
-  uses: torknetwork/tork-action@v1
+  uses: torkjacobs/tork-action@v1
   with:
     api-key: ${{ secrets.TORK_API_KEY }}
 ```
@@ -66,7 +66,7 @@ jobs:
 
 ```yaml
 - name: Tork Scan (Critical Only)
-  uses: torknetwork/tork-action@v1
+  uses: torkjacobs/tork-action@v1
   with:
     api-key: ${{ secrets.TORK_API_KEY }}
     severity-threshold: critical
@@ -77,7 +77,7 @@ jobs:
 
 ```yaml
 - name: Tork Scan
-  uses: torknetwork/tork-action@v1
+  uses: torkjacobs/tork-action@v1
   with:
     api-key: ${{ secrets.TORK_API_KEY }}
     output-format: sarif
@@ -92,7 +92,7 @@ jobs:
 
 ```yaml
 - name: Tork Scan
-  uses: torknetwork/tork-action@v1
+  uses: torkjacobs/tork-action@v1
   with:
     api-key: ${{ secrets.TORK_API_KEY }}
     scan-path: ./src

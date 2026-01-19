@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/torknetwork/tork-action.git"
+    "url": "git+https://github.com/torkjacobs/tork-action.git"
   },
   "keywords": [
     "github-action",
