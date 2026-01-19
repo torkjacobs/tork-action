@@ -1,0 +1,51 @@
+name: 'Tork AI Governance'
+description: 'Scan code and AI outputs for PII, validate policies, and enforce AI governance in your CI/CD pipeline'
+author: 'Tork Network Pty Ltd'
+branding:
+  icon: 'shield'
+  color: 'blue'
+
+inputs:
+  api-key:
+    description: 'Your Tork API key'
+    required: true
+  scan-path:
+    description: 'Path to scan for PII and governance issues'
+    required: false
+    default: '.'
+  fail-on-violation:
+    description: 'Fail the build if governance violations are found'
+    required: false
+    default: 'true'
+  severity-threshold:
+    description: 'Minimum severity to fail on (low, medium, high, critical)'
+    required: false
+    default: 'medium'
+  scan-mode:
+    description: 'Scan mode: pii, policy, full'
+    required: false
+    default: 'full'
+  config-file:
+    description: 'Path to tork.config.json or tork.yaml'
+    required: false
+    default: ''
+  output-format:
+    description: 'Output format: json, sarif, markdown'
+    required: false
+    default: 'markdown'
+
+outputs:
+  score:
+    description: 'Governance score (0-100)'
+  violations-count:
+    description: 'Number of violations found'
+  pii-detected:
+    description: 'Whether PII was detected (true/false)'
+  report-url:
+    description: 'URL to full report on Tork dashboard'
+  sarif-file:
+    description: 'Path to SARIF output file (if output-format is sarif)'
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
